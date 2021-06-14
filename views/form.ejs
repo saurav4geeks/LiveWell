@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Main form</title>
+        <link rel="stylesheet" href="../css/form.css">
+        
+    </head>
+
+    <body>
+
+        <div class="container">
+          <h3>Before your appointment fill this form so that out medical professionals can understand you better</h3>
+          <h5><I>Note: * means Mandatory Ques</I></h5>
+           <div id="error"></div>
+
+          <form id="main-form" onsubmit="return validate();">
+            <div class="input_field">
+                <label>Name *</label>
+                <input type="text" placeholder="Name" id="name">
+            </div>
+<br>
+            <div class="input_field">
+                <label>Age *</label>
+                <input type="text" placeholder="Age" id="age">
+            </div>
+<br>
+            <div class="input_field">
+                <label>Phone Number *</label>
+                <input type="text" placeholder="Phone" id="phone">
+            </div>
+<br>
+            <div class="input_field">
+                <label>Gender *</label>
+                <input type="text" placeholder="Gender" id="gender">
+            </div>
+<br>
+            <div class="input_field">
+                <Label>Address *</Label>
+                <textarea placeholder="Address" id="address"></textarea>
+            </div>
+<br>
+            <div class="input_field">
+                <Label>Tell me about your sleeping habits over the past X months. Have you noticed any changes? Difficulty sleeping? Restlessness? How about the quality of your sleep?</Label>
+                <textarea placeholder="Type your answer here" id="answer1"></textarea>
+            </div>
+<br>    
+            <div class="input_field">
+                <Label>How would you describe your appetite over the past X weeks? Have your eating habits altered in any way?
+                </Label>
+                <textarea placeholder="Type your answer here" id="answer2"></textarea>
+            </div>
+<br>    
+            <div class="input_field">
+                <Label>Could you tell me about any times over the past few months that you’ve been bothered by low feelings, stress, or sadness? *</Label>
+                <textarea placeholder="Type your answer here" id="answer3"></textarea>
+            </div>
+<br>    
+            <div class="input_field">
+                <Label>How frequently have you had little pleasure or interest in the activities you usually enjoy? </Label>
+                <textarea placeholder="Type your answer here" id="answer4"></textarea>
+            </div>
+<br>    
+            <div class="input_field">
+                <Label>How frequently have you been bothered by not being able to stop your worrying?</Label>
+                <textarea placeholder="Type your answer here" id="answer5"></textarea>
+            </div>
+<br>    
+            <div class="input_field">
+                <Label>Tell me about how confident you have been feeling in your capabilities recently?</Label>
+                <textarea placeholder="Type your answer here" id="answer6"></textarea>
+            </div>
+<br>    
+            <div class="input_field">
+                <Label>How often have you felt as though the future was bleak, over the past few weeks?</Label>
+                <textarea placeholder="Type your answer here" id="answer7"></textarea>
+            </div>
+<br>    
+            <div class="input_field">
+                <Label>What feelings have you had recently about working towards your goals?</Label>
+                <textarea placeholder="Type your answer here" id="answer8"></textarea>
+            </div>
+<br>    
+            <div class="input_field">
+                <Label>Describe how ‘supported’ you feel by others around you – your friends, family, or otherwise?</Label>
+                <textarea placeholder="Type your answer here" id="answer9"></textarea>
+            </div>
+<br>    
+            <div class="input_field">
+                <Label>How frequently have you been doing things that mean something to you or your life?</Label>
+                <textarea placeholder="Type your answer here" id="answer10"></textarea>
+            </div>
+<br><br>
+            <div class="btn">
+                <button onclick='sendMail()' class="button button2"><a href="/dashboard" target="_blank">Submit</button></a>
+            </div>
+            <div class="btn">
+                <button onclick='sendMail()' class="button button2"><a href="/" target="_blank">Go Back!</button></a>
+            </div>
+          </form>
+        </div>
+        </body>
+</html>

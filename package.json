@@ -1,0 +1,21 @@
+{
+  "name": "livewell",
+  "version": "1.0.0",
+  "description": "Menatal Health App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Srijan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "emailjs-com": "^2.6.4",
+    "express": "^4.17.1",
+    "express-openid-connect": "^2.4.0",
+    "express-session": "^1.17.2",
+    "nodemon": "^2.0.7"
+  }
+}
